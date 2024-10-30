@@ -1,15 +1,16 @@
 # 1. Gabinet d'advocats
 
 `Es vol dissenyar una base de dades relacional per a emmagatzemar informació
-sobre els assumptes que porta un gabinet d'advocats.
-`
+sobre els assumptes que porta un gabinet d'advocats.`
 
-De cada zoo es vol emmagatzemar el seu codi, nom, la ciutat i país on es troba, mida (m2) i pressupost anual.
+· Cada assumpte té un número d'expedient que l'identifica i correspon a un sol
+client.
 
-Cada zoo codifica els seus animals amb un codi propi, de manera que entre zoos es pot donar el cas que es repeteixi.
-De cada espècie animal s'emmagatzema un codi d'espècie, el nom vulgar, el nom científic, família a la qual pertany i si es troba en perill d'extinció.
+· De l'assumpte s'ha d'emmagatzemar la data d'inici, data d'arxiu (finalització), el seu estat (en tràmit, arxivat, etc), així com les dades personals del
+client al qual pertany (DNI, nom, adreça, telèfon).
 
-A més, s'ha de guardar informació sobre cada animal que els zoos tenen, com el seu número d'identificació, espècie, sexe, any de naixement, país d'origen i continent.
+· Alguns assumptes són portats per un o diversos procuradors i viceversa, dels
+quals ens interessa també les dades personals (DNI, nom, adreça, telèfon).
 
 # 2. Model conceptual
 ## 2.1. Enllaç públic a l'esquema
